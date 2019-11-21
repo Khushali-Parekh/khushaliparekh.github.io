@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Payment-Step 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/kp_stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="top">
+  <nav class="navbar navbar-expand bg-primary navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"> <a class="nav-link" href="#">Ask Motabhai <span class="sr-only">(current)</span> </a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Group Website</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Language</a> </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="row">
+	 <div class="col-xl-6 col-lg-6 col-md-6 col-10 d-block m-auto  col-sm-1 offset-sm-0">
+	<div class="image-2"><img src="images/bse_institute.png" width="450" height="100"  class="responsive-4"> </div></div>
+	<div class="col-xl-6 col-lg-6 col-md-6 col-sm-4 col-10 d-block m-auto ">
+	<div class="searchbar">
+	<div class="search col-xl-10 col-sm-11">
+				<form class="search-form">
+					<input type="text" placeholder="Search for keywords">
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			</div>
+		
+		
+		</div></div>
+	
+<div class="middle">
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+<div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="collapsenavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"> <a class="nav-link  text-white-50" href="#">Home</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white-50" href="#">About Us</a> </li>
+      <li class="nav-item"> <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Programs</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01"> <a class="dropdown-item" href="#">Corporates</a> <a class="dropdown-item" href="#">Bachelor</a> <a class="dropdown-item" href="basic_courses.html">Basic</a> <a class="dropdown-item" href="#">Post Graduate</a> <a class="dropdown-item" href="#">GFMP</a> <a class="dropdown-item" href="certificate_courses.html">Certificates</a> <a class="dropdown-item" href="#">Professional</a> </div>
+      <li class="nav-item"> <a class="nav-link text-white-50" href="#">Visits</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white-50" href="#">Tests</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white-50" href="#">Partnerships</a> </li>
+      <li class="nav-item"> <a class="nav-link text-white-50" href="#">Contact</a> </li>
+    </ul>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="container">
+  <p class="breadcrumb-item">
+    <h12> Home </h12>
+    <h12> > </h12>
+    <h12> Programs </h12>
+    <h12> > </h12>
+    <h12> Checkout </h12>
+  </p>
+</div>
+<div class="container">
+  <div class="stepwizard">
+    <div class="stepwizard-row setup-panel ">
+      <div class="stepwizard-step col-xs-3 "> 
+        <!--                <a href="#step-1" button class="btn-circle">1</a>-->
+        <button class="btn-circle">1</button>
+        <td class="hidden-xs"><p class="personal"><small class="personal">Personal Details</small></p></td>
+      </div>
+      <div class="stepwizard-step col-xs-3">
+        <button class="btn-circle_2" disabled="disabled">2</button>
+        <p><small class="delivery">Delivery Address</small></p>
+      </div>
+      <div class="stepwizard-step col-xs-3">
+        <button class="btn-circle_2" disabled="disabled">3</button>
+        <p><small class="delivery">Order Summary</small></p>
+      </div>
+      <div class="stepwizard-step col-xs-3">
+        <button class="btn-circle_2" disabled="disabled">4</button>
+        <p><small class="delivery">Payment Details</small></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div></div>
+  <form role="form">
+  <div class="panel panel-primary setup-content" id="step-1">
+  <div class="panel-heading">
+    <h3 class="panel-title">Personal Details</h3>
+  </div>
+  <div class="panel-body">
+  
+  <!--<div class="form-group">
+<form>
+  <div class="Login">
+    <label>
+      <input type="radio" name="radio-choice-0" id="radio-choice-0a">
+      Login </label>
+  </div>
+  <div class="create_account">
+    <label>
+      <input type="radio" name="radio-choice-0" id="radio-choice-0a">
+      Create an account </label>
+  </div>
+  </div>
+</form>-->
+  
+  <div class="radio">
+    <label>
+      <input type="radio" name="optradio" checked>
+      Login</label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optradio">
+      Create an account</label>
+  </div>
+  <div></div>
+  <!-- Button to open the modal login form -->
+  <button class="buynowbtn" onclick="document.getElementById('id01').style.display='block'">Continue</button>
+  <div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> </div>
+    <div class="containerpopup">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uname"><b>Mobile Number</b></label>
+      <input type="text" placeholder="Enter Mobile number" name="mobnum" required>
+      <label for="uname"><b>Email Address</b></label>
+      <input type="text" placeholder="Enter Email Address" name="email" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">
+        Remember me </label>
+    </div>
+    <div class="containerpop" style="background-color:#f1f1f1">
+      <button type="submit" onclick="window.location.replace('payment-2.html')" class="buttonpop">Submit</button>
+      <span class="psw"><a href="#">Forgot Password?</a></span> </div>
+  </form>
+</div>
+<div></div>
+</div>
+</div>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="py-5 bg-dark  fixed-bottom">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; BSE 2019</p>
+  </div>
+  <!-- /.container --> 
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>--> 
+<script src="js/kp_js.js"></script>
+</body>
+</html>
